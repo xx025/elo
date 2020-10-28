@@ -5,7 +5,7 @@
 1. 豆瓣电影:[《社交网络》](https://movie.douban.com/subject/3205624/)
 2. 知乎: [ELO算法的原理及应用](https://zhuanlan.zhihu.com/p/57480433)
 3. 百度百科: [等级分](https://baike.baidu.com/item/%E7%AD%89%E7%BA%A7%E5%88%86/8609967?fr=aladdin)
-
+4. 百度百科： [Logistic分布](https://baike.baidu.com/item/Logistic%E5%88%86%E5%B8%83/22670718?fr=aladdin)
 
 
 
