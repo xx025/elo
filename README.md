@@ -8,6 +8,8 @@
 3. 维基百科：[等级分](https://zh.m.wikipedia.org/zh-hans/%E7%AD%89%E7%BA%A7%E5%88%86)
 4. 百度百科：[Logistic分布](https://baike.baidu.com/item/Logistic%E5%88%86%E5%B8%83/22670718?fr=aladdin)
 
+5. 更多参考：
+https://web.archive.org/web/20160204123209/http://www.gameres.com/thread_228018_1_1.html
 
 
 
