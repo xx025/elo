@@ -5,13 +5,16 @@
 1. 豆瓣电影：[《社交网络》](https://movie.douban.com/subject/3205624/)
 2. 知乎专栏：[ELO算法的原理及应用](https://zhuanlan.zhihu.com/p/57480433)
 2. 知乎专栏：[通俗讲义—游戏数值知识大全](https://zhuanlan.zhihu.com/p/28190267)
-3. 维基百科：[等级分](https://zh.m.wikipedia.org/zh-hans/%E7%AD%89%E7%BA%A7%E5%88%86)
+3. 百度百科：[等级分](https://baike.baidu.com/item/%E7%AD%89%E7%BA%A7%E5%88%86/8609967?fr=aladdin)
 4. 百度百科：[Logistic分布](https://baike.baidu.com/item/Logistic%E5%88%86%E5%B8%83/22670718?fr=aladdin)
 
-5. 更多参考：
-https://web.archive.org/web/20160204123209/http://www.gameres.com/thread_228018_1_1.html
+---
 
+2020年11月1日：看了一下社交网络这个电影，综合上面的一些讲解资料ELO算法并不复杂
 
+![??](20201101_090830.733.jpg)
+
+我觉着应该把重点放在可视化上，参考电影中的做成了一个类似于投票网站，参赛选手是数据库中的女孩们，评分者是任何一个人
 
 ---
 
