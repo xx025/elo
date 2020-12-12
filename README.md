@@ -1,5 +1,75 @@
 #  竞技排名算法ELO实现和可视化
 
+# ELO算法以及可视化实现
+
+
+1. 如何计算等级分？
+    ```
+    ELO算法
+    ```
+2. 如何保证每人参赛次数尽量相等？
+    ```
+    1. 设置一个标志，记录参赛次数，每次取最小的参赛次数记录L
+    ```
+3. 
+如何匹配对手？
+    ```
+    根据第二条原则产生一个随机数i
+    1. i>0.5
+        选择第一个大于等于L等级分的记录
+    2. i<0.5
+        选择第一个小于等于L等级分的记录
+    ```
+4. 如何进行展示？
+    ```
+    在窗口中进行匹配参比
+    每一轮重新两位选手的等级分并存进数据库
+    触动查看排行生成当前排行版
+    ```
+  
+ 5. 其他
+    1. 数据库连接以及文件夹路径在src\setting.json设置
+    2. 运行rebuild_db.py可对数据库存储的数据进行重建
+    
+ 
+ 
+```sql
+-- --------------------------------------------------------
+-- 主机:                           127.0.0.1
+-- 服务器版本:                        5.5.27 - MySQL Community Server (GPL)
+-- 服务器操作系统:                      Win64
+-- HeidiSQL 版本:                  11.0.0.5919
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+-- 导出 beautgirl0x3 的数据库结构
+CREATE DATABASE IF NOT EXISTS `beautgirl0x3` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `beautgirl0x3`;
+
+-- 导出  表 beautgirl0x3.girls 结构
+CREATE TABLE IF NOT EXISTS `girls` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pothopath` varchar(77) DEFAULT NULL,
+  `score` double DEFAULT '1400',
+  `comNum` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+-- 数据导出被取消选择。
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+```
+
+
 
 参考资料：
 1. 豆瓣电影：[《社交网络》](https://movie.douban.com/subject/3205624/)
@@ -22,6 +92,13 @@
 1. 最近没什么进展，但我知道了一个工具`django`
 2. 还知道一本书：《django入门与实践》
 3. 当然，前些日子认为的重点并不正确，重点应该是组织这一个框架，前端的交互和后端的数据处理，以及这之间的相互关系
+
+---
+
+---
+
+2020-12-12 23:32:05
+用本地窗体完成了
 
 ---
 
