@@ -33,3 +33,4 @@ def main():
         ff.write(str1+'''</table>''')
     import webbrowser
     webbrowser.open_new_tab("index.html")
+
