@@ -1,3 +1,4 @@
+#生成静态html页面
 from src.inti_seting import con_db
 import os
 
