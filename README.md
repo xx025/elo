@@ -30,43 +30,12 @@
     1. 数据库连接以及文件夹路径在src\setting.json设置
     2. 运行rebuild_db.py可对数据库存储的数据进行重建
     
- 
- 
-```sql
--- --------------------------------------------------------
--- 主机:                           127.0.0.1
--- 服务器版本:                        5.5.27 - MySQL Community Server (GPL)
--- 服务器操作系统:                      Win64
--- HeidiSQL 版本:                  11.0.0.5919
--- --------------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8 */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- 导出 beautgirl0x3 的数据库结构
-CREATE DATABASE IF NOT EXISTS `beautgirl0x3` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `beautgirl0x3`;
 
--- 导出  表 beautgirl0x3.girls 结构
-CREATE TABLE IF NOT EXISTS `girls` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `pothopath` varchar(77) DEFAULT NULL,
-  `score` double DEFAULT '1400',
-  `comNum` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+----
 
--- 数据导出被取消选择。
 
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
-```
 
 
 
@@ -76,27 +45,6 @@ CREATE TABLE IF NOT EXISTS `girls` (
 2. 知乎专栏：[通俗讲义—游戏数值知识大全](https://zhuanlan.zhihu.com/p/28190267)
 3. 百度百科：[等级分](https://baike.baidu.com/item/%E7%AD%89%E7%BA%A7%E5%88%86/8609967?fr=aladdin)
 4. 百度百科：[Logistic分布](https://baike.baidu.com/item/Logistic%E5%88%86%E5%B8%83/22670718?fr=aladdin)
-
----
-
-
-2020-12-12 23:32:05
-用本地窗体完成了
-
----
-
-2020年11月1日：看了一下社交网络这个电影，综合上面的一些讲解资料ELO算法并不复杂
-
-![??](20201101_090830.733.jpg)
-
-我觉着应该把重点放在可视化上，参考电影中的做成了一个类似于投票网站，参赛选手是数据库中的女孩们，评分者是任何一个人
-
----
-
-2020年11月10日：
-1. 最近没什么进展，但我知道了一个工具`django`
-2. 还知道一本书：《django入门与实践》
-3. 当然，前些日子认为的重点并不正确，重点应该是组织这一个框架，前端的交互和后端的数据处理，以及这之间的相互关系
 
 ---
 

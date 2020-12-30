@@ -1,7 +1,7 @@
 from src.inti_seting import con_db
 import os
 
-def main():
+def generatehtmlpage():
     str1='''
     <table style="border-collapse:collapse;word-break:break-all;font-size:14px;width:900px;">
         <tr style="color:#000;background-color:#48a6fb;font-size:18px;">
@@ -21,7 +21,7 @@ def main():
     con_db.getcon()
     list=con_db.get_all("select pothopath,id,score,comNum from girls order by score desc")
     con_db.close()
-    with open("index.html", mode='wt', encoding='utf-8') as ff:
+    with open("src\index.html", mode='wt', encoding='utf-8') as ff:
         for i in list:
             str2 = '''<tr><td style="border-color:#000;border-width:1px;border-style:solid;padding:5px;min-width:100px;text-align:center;">
             <img src="file:///{0}" style="width:50px;height: 50px;"></td>
@@ -32,5 +32,5 @@ def main():
             str1+=str2
         ff.write(str1+'''</table>''')
     import webbrowser
-    webbrowser.open_new_tab("index.html")
+    webbrowser.open_new_tab("src\index.html")
 

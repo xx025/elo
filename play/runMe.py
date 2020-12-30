@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Beautiful Girl——竞技排名算法ELO实现和可视化"))
         self.showRand.setText(_translate("MainWindow", "查看排行"))
-        iconn = QIcon('src/icon.png')
+        iconn = QIcon('../src/icon.png')
         MainWindow.setWindowIcon(iconn)
         self.btn1_right.setText(_translate("MainWindow", "LIKE♥"))
         self.btn2_left.setText(_translate("MainWindow", "LIKE♥"))
@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
 
     def cilck_showall(self):
         from src import index
-        index.main()
+        index.generatehtmlpage()
 
 class action():
 

@@ -17,7 +17,7 @@ class ELO:
         return a_e, b_e
 
     @staticmethod
-    def elo(contestants, add_score):
+    def elo(con, add_score):
         # 根据选手的期望得分对得分进行调整
         '''
             R’=R+K(S-E)
@@ -28,9 +28,9 @@ class ELO:
             K:根据分值截断可做调整
         '''
         K = 16
-        EA, EB = ELO.E(contestants[0].score, contestants[1].score)
-        contestants[0].score = contestants[0].score + K * (add_score[0] - EA)
-        contestants[1].score = contestants[1].score + K * (add_score[1] - EB)
+        EA, EB = ELO.E(con[0].score, con[1].score)
+        con[0].score = con[0].score + K * (add_score[0] - EA)
+        con[1].score = con[1].score + K * (add_score[1] - EB)
 
 
 
