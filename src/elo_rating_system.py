@@ -3,7 +3,7 @@ ELO算法
 '''
 from random import random
 
-from src.inti_seting import con_db
+from inti_seting import con_db
 from src.peopless import item_girls
 
 

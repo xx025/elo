@@ -6,7 +6,7 @@ class class_girls:
         self.score = score_
         self.comNum = comNum_
     def get(self):
-        return self.id,self.comNum,self.score
+        return self.id,self.score,self.comNum
 
 
 def item_girls(peo):
